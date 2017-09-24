@@ -2,6 +2,7 @@ const metalsmith = require('metalsmith');
 const drafts = require('metalsmith-drafts');
 const markdown = require('metalsmith-markdown');
 const collections = require('metalsmith-collections');
+const aliases = require('metalsmith-aliases');
 const permalinks = require('metalsmith-permalinks');
 const layouts = require('metalsmith-layouts');
 const sitemap = require('metalsmith-sitemap');
@@ -75,6 +76,7 @@ metalsmith(__dirname)
     }))
     .use(markdown())
     .use(permalinks())
+    .use(aliases())
     .use(layouts({
         engine: 'handlebars',
         directory: 'layouts',
@@ -82,7 +84,7 @@ metalsmith(__dirname)
         partials: 'layouts/partials'
     }))
     .use(sitemap({
-        hostname: "https://andreasvirkus.me"
+        hostname: "https://metal.hamspot.com"
     }))
     .build(function (err) {
         if (err) throw err;
