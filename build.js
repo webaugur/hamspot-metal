@@ -63,7 +63,7 @@ metalsmith(__dirname)
             sortBy: 'date',
             reverse: true
         },
-        shack-talk: {
+        'shack-talk': {
             pattern: 'shack-talk/*.md',
             sortBy: 'date',
             reverse: true
