@@ -1,11 +1,11 @@
 ---
-title: Home
+title: Ham Spot Bits - Videos
 layout: default.hbs
-menu-order: 1
+menu-order: 5
 date: 2017-01-01
-url: 'index'
+url: 'bits'
 ---
 
-# Homepage
+# Bits
 
 Look shiny text!!!!

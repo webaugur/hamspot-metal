@@ -23,8 +23,8 @@ Handlebars.registerHelper('date', function (date) {
 metalsmith(__dirname)
     .metadata({
         site: {
-            name: 'My site',
-            description: "My super sweet Metalsmith site on Netlify.",
+            name: 'Ham Spot Inc',
+            description: "Ham Radio and Maker Products and Projects",
             generatorname: "Metalsmith",
             generatorurl: "http://metalsmith.io/",
             generatortitle: "Check out Metalsmith!",
@@ -38,8 +38,33 @@ metalsmith(__dirname)
     .clean(true)
     .use(drafts())
     .use(collections({
-        posts: {
-            pattern: 'posts/*.md',
+        products: {
+            pattern: 'products/*.md',
+            sortBy: 'date',
+            reverse: true
+        },
+        bits: {
+            pattern: 'bits/*.md',
+            sortBy: 'date',
+            reverse: true
+        },
+        homebrew: {
+            pattern: 'homebrew/*.md',
+            sortBy: 'date',
+            reverse: true
+        },
+        presents: {
+            pattern: 'presents/*.md',
+            sortBy: 'date',
+            reverse: true
+        },
+        salvage: {
+            pattern: 'salvage/*.md',
+            sortBy: 'date',
+            reverse: true
+        },
+        shack-talk: {
+            pattern: 'shack-talk/*.md',
             sortBy: 'date',
             reverse: true
         },

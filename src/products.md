@@ -1,11 +1,11 @@
 ---
-title: Home
+title: Ham Spot Products
 layout: default.hbs
 menu-order: 1
 date: 2017-01-01
-url: 'index'
+url: 'products'
 ---
 
-# Homepage
+# Products
 
 Look shiny text!!!!
